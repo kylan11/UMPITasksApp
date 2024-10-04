@@ -3,10 +3,16 @@
         ' Set ListView properties
         ListView1.View = View.Details
         ListView1.CheckBoxes = True
-        ListView1.Columns.Add("Task", 200)
-        ListView1.Columns.Add("Due Date", 150)
+
+        ' Check if columns are already added
+        If ListView1.Columns.Count = 0 Then
+            ListView1.Columns.Add("Task", 200)
+            ListView1.Columns.Add("Due Date", 150)
+        End If
+
         LoadTasks()
     End Sub
+
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Dim task As String = InputBox("Enter new task:", "Add Task")
