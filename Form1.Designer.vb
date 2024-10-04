@@ -124,6 +124,7 @@ Partial Class Form1
 
     End Sub
 
+    ' Declare controls as Friend to allow access from other classes
     Friend WithEvents ListView1 As System.Windows.Forms.ListView
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
