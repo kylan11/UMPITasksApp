@@ -32,6 +32,7 @@ Partial Class Form1
         '
         'ListView1
         '
+        Me.ListView1.CheckBoxes = True
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.columnHeaderTask, Me.columnHeaderDueDate})
         Me.ListView1.HideSelection = False
         Me.ListView1.Location = New System.Drawing.Point(12, 12)
@@ -39,6 +40,7 @@ Partial Class Form1
         Me.ListView1.Size = New System.Drawing.Size(360, 200)
         Me.ListView1.TabIndex = 0
         Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
         '
         'columnHeaderTask
         '
