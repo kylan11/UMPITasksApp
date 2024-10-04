@@ -28,6 +28,10 @@ Partial Class Form1
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnRemove = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
+        Me.btnSearch = New System.Windows.Forms.Button()
+        Me.btnSortByName = New System.Windows.Forms.Button()
+        Me.btnSortByDate = New System.Windows.Forms.Button()
+        Me.btnMarkCompleted = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'ListView1
@@ -79,11 +83,51 @@ Partial Class Form1
         Me.btnEdit.Text = "Edit Task"
         Me.btnEdit.UseVisualStyleBackColor = True
         '
+        'btnSearch
+        '
+        Me.btnSearch.Location = New System.Drawing.Point(12, 255)
+        Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(110, 31)
+        Me.btnSearch.TabIndex = 4
+        Me.btnSearch.Text = "Search Task"
+        Me.btnSearch.UseVisualStyleBackColor = True
+        '
+        'btnSortByName
+        '
+        Me.btnSortByName.Location = New System.Drawing.Point(137, 255)
+        Me.btnSortByName.Name = "btnSortByName"
+        Me.btnSortByName.Size = New System.Drawing.Size(110, 31)
+        Me.btnSortByName.TabIndex = 5
+        Me.btnSortByName.Text = "Sort by Name"
+        Me.btnSortByName.UseVisualStyleBackColor = True
+        '
+        'btnSortByDate
+        '
+        Me.btnSortByDate.Location = New System.Drawing.Point(262, 255)
+        Me.btnSortByDate.Name = "btnSortByDate"
+        Me.btnSortByDate.Size = New System.Drawing.Size(110, 31)
+        Me.btnSortByDate.TabIndex = 6
+        Me.btnSortByDate.Text = "Sort by Date"
+        Me.btnSortByDate.UseVisualStyleBackColor = True
+        '
+        'btnMarkCompleted
+        '
+        Me.btnMarkCompleted.Location = New System.Drawing.Point(12, 292)
+        Me.btnMarkCompleted.Name = "btnMarkCompleted"
+        Me.btnMarkCompleted.Size = New System.Drawing.Size(360, 31)
+        Me.btnMarkCompleted.TabIndex = 7
+        Me.btnMarkCompleted.Text = "Mark Completed"
+        Me.btnMarkCompleted.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(384, 261)
+        Me.ClientSize = New System.Drawing.Size(384, 335)
+        Me.Controls.Add(Me.btnMarkCompleted)
+        Me.Controls.Add(Me.btnSortByDate)
+        Me.Controls.Add(Me.btnSortByName)
+        Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnEdit)
         Me.Controls.Add(Me.btnRemove)
         Me.Controls.Add(Me.btnAdd)
@@ -100,4 +144,8 @@ Partial Class Form1
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents btnRemove As System.Windows.Forms.Button
     Friend WithEvents btnEdit As System.Windows.Forms.Button
+    Friend WithEvents btnSearch As System.Windows.Forms.Button
+    Friend WithEvents btnSortByName As System.Windows.Forms.Button
+    Friend WithEvents btnSortByDate As System.Windows.Forms.Button
+    Friend WithEvents btnMarkCompleted As System.Windows.Forms.Button
 End Class
